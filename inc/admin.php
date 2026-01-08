@@ -593,15 +593,17 @@ class XO_Event_Calendar_Admin {
 				}
 				break;
 			case 'delete':
-				unset( $holiday_settings[ $selected_name ] );
 				check_admin_referer( 'delete-history' );
-				update_option( 'xo_event_calendar_holiday_settings', $holiday_settings );
-				$messages[] = '<div id="message" class="updated notice is-dismissible"><p>' . __( 'The holiday item has been successfully deleted.', 'xo-event-calendar' ) . '</p></div>';
-				if ( count( $holiday_settings ) >= 1 ) {
-					reset( $holiday_settings );
-					$selected_name = key( $holiday_settings );
-				} else {
-					$selected_name = null;
+				if ( ! empty( $selected_name ) && isset( $holiday_settings[ $selected_name ] ) ) {
+					unset( $holiday_settings[ $selected_name ] );
+					update_option( 'xo_event_calendar_holiday_settings', $holiday_settings );
+					$messages[] = '<div id="message" class="updated notice is-dismissible"><p>' . __( 'The holiday item has been successfully deleted.', 'xo-event-calendar' ) . '</p></div>';
+					if ( count( $holiday_settings ) >= 1 ) {
+						reset( $holiday_settings );
+						$selected_name = key( $holiday_settings );
+					} else {
+						$selected_name = null;
+					}
 				}
 				break;
 			case 'append':

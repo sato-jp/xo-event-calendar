@@ -3,28 +3,32 @@
  * XO Event Calendar plugin for WordPress.
  *
  * @package xo-event-calendar
- * @author  ishitaka
+ * @author  ishitaka (Original Author: Xakuro)
  * @license GPL-2.0-or-later
  *
  * @wordpress-plugin
  * Plugin Name:       XO Event Calendar
- * Plugin URI:        https://xakuro.com/wordpress/xo-event-calendar/
- * Description:       XO Event Calendar is a simple event calendar plugin.
- * Author:            Xakuro
- * Author URI:        https://xakuro.com/
+ * Plugin URI:        https://github.com/sato-jp/xo-event-calendar
+ * Description:       XO Event Calendar is a simple event calendar plugin. (Forked and maintained by sato-jp)
+ * Author:            sato-jp
+ * Author URI:        https://github.com/sato-jp
  * License:           GPL v2 or later
  * Requires at least: 4.9
  * Requires PHP:      7.0
- * Version:           3.2.10
+ * Version:           3.3.0
  * Text Domain:       xo-event-calendar
  * Domain Path:       /languages
+ * 
+ * Original Plugin URI: https://xakuro.com/wordpress/xo-event-calendar/
+ * Original Author:     Xakuro
+ * Original Author URI: https://xakuro.com/
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'XO_EVENT_CALENDAR_VERSION', '3.2.10' );
+define( 'XO_EVENT_CALENDAR_VERSION', '3.3.0' );
 
 if ( ! defined( 'XO_EVENT_CALENDAR_EVENT_POST_TYPE' ) ) {
 	define( 'XO_EVENT_CALENDAR_EVENT_POST_TYPE', 'xo_event' );

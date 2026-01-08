@@ -1,14 +1,23 @@
 === XO Event Calendar ===
-Contributors: ishitaka
+Contributors: sato-jp
 Tags: event,events,calendar,event calendar,events calendar
 Requires at least: 4.9
 Tested up to: 6.5
 Requires PHP: 7.0
-Stable tag: 3.2.10
+Stable tag: 3.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 XO Event Calendar is a simple event calendar plugin.
+
+== Fork Information ==
+
+This plugin is a fork of the original XO Event Calendar developed by Xakuro.
+The original development has ended, and this fork is maintained by sato-jp.
+
+* Original Plugin: https://xakuro.com/wordpress/xo-event-calendar/
+* Original Author: Xakuro
+* Fork Repository: https://github.com/sato-jp/xo-event-calendar
 
 == Description ==
 
@@ -39,6 +48,10 @@ The Blocks is available in WordPress version 5.8 and above.
 5. Holidays setting
 
 == Changelog ==
+
+= 3.3.0 =
+* Forked from original XO Event Calendar (v3.2.10) by Xakuro
+* Maintenance continued by sato-jp
 
 = 3.2.10 =
 * Supported WordPress 6.5.
